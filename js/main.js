@@ -36,37 +36,37 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 1,
       name: "PRODUCT 1",
-      image: "1.PNG",
+      image: "1.png",
       price: 2000,
     },
     {
       id: 2,
       name: "PRODUCT 2",
-      image: "2.PNG",
+      image: "2.png",
       price: 2200,
     },
     {
       id: 3,
       name: "PRODUCT 3",
-      image: "3.PNG",
+      image: "3.png",
       price: 1800,
     },
     {
       id: 4,
       name: "PRODUCT 4",
-      image: "4.PNG",
+      image: "4.png",
       price: 1600,
     },
     {
       id: 5,
       name: "PRODUCT 5",
-      image: "5.PNG",
+      image: "5.png",
       price: 2800,
     },
     {
       id: 6,
       name: "PRODUCT 6",
-      image: "6.PNG",
+      image: "6.png",
       price: 4000,
     },
   ];
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let newDiv = document.createElement("div");
       newDiv.classList.add("item");
       newDiv.innerHTML = `
-            <img src="../img/${value.image}" alt="${value.name}">
+            <img src="images/img${value.image}" alt="${value.name}">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>
