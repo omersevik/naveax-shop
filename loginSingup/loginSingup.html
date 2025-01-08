@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naveax Shop - Login/Register</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="hide-scroll">
+    <div id="loader">
+      <span class="loader"></span>
+    </div>
+
+    <header>
+      <div class="logo">Naveax</div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../aboutUsContact/AboutUsContact.html">About us / Contact</a>
+        <a href="loginSingup.html">Login / Singup</a>
+        <a href="../shopping/shopping.html">
+          <svg
+            class="svgs"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+    <div class="carousel">
+      <div class="list">
+        <div class="item">
+          <form class="Login-form" aria-required="false">
+            <h2>Do you have an account?</h2>
+            <div class="input-container">
+              <div class="validation-box" id="email-validation">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                  />
+                </svg>
+              </div>
+              <span>EMAIL</span>
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                class="EmailBox"
+              />
+            </div>
+
+            <div class="input-container">
+              <div
+                class="validation-box"
+                id="password-validation"
+                class="PasswordBox"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"
+                  />
+                </svg>
+              </div>
+              <span>PASSWORD</span>
+              <input
+                type="password"
+                placeholder="Password"
+                required
+                class="Password"
+              />
+            </div>
+
+            <span class="spanReg"
+              >Login is free for this week only, Login now!</span
+            >
+            <button type="submit">Login</button>
+          </form>
+          <div class="introduce">
+            <div class="title">Do you have an account?</div>
+            <div class="topic">LOGIN</div>
+            <div class="des">
+              Your data is securely encrypted and stored. We prioritize your
+              privacy and ensure compliance with global data protection
+              standards
+            </div>
+            <button class="seeMore">SEE MORE</button>
+          </div>
+          <div class="detail">
+            <div class="title">Take your music pleasure to the top</div>
+            <div class="des">
+              <h3>Safety Considerations for Using Headphones</h3>
+              <h4>Awareness of Ambient Noise:</h4>
+              When using headphones with active noise-cancellation (ANC)
+              technology, your awareness of the environment may decrease. In
+              traffic, while walking, or in outdoor settings, disable ANC to
+              ensure you can hear important ambient sounds. <br />
+
+              <h4>Using Headphones While Driving:</h4>
+              Wearing headphones while driving or cycling can block critical
+              environmental sounds, increasing the risk of accidents. Avoid
+              using headphones in these situations to maintain full awareness.
+              <br />
+
+              <h4>Wired Headphones:</h4>
+              Wired headphones pose a risk of snagging during sudden movements.
+              Opt for wireless models when exercising or performing activities
+              that involve frequent motion to minimize this hazard. <br />
+
+              <h4>Headphones at Night:</h4>
+              Sleeping with headphones can cause discomfort and pressure on your
+              ears, and it may prevent you from waking up in emergencies.
+              Consider alternatives like speakers for nighttime use.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <form class="register-form" aria-required="false">
+            <h2>Create an Account</h2>
+
+            <div class="input-container">
+              <div class="validation-box" id="name-validation">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                  />
+                </svg>
+              </div>
+              <span>NAME</span>
+              <input
+                type="text"
+                placeholder="Full Name"
+                required
+                class="NameBox"
+              />
+            </div>
+
+            <div class="input-container">
+              <div class="validation-box" id="email-validation">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                  />
+                </svg>
+              </div>
+              <span>EMAIL</span>
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                class="EmailBox"
+              />
+            </div>
+
+            <div class="input-container">
+              <div
+                class="validation-box"
+                id="password-validation"
+                class="PasswordBox"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"
+                  />
+                </svg>
+              </div>
+              <span>PASSWORD</span>
+              <input
+                type="password"
+                placeholder="Password"
+                required
+                class="Password"
+              />
+            </div>
+
+            <div class="input-container">
+              <div
+                class="validation-box"
+                id="confirm-password-validation"
+                class="confirmPasswordBox"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"
+                  />
+                </svg>
+              </div>
+              <span>CONFIRM PASSWORD</span>
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                required
+                class="confirmPassword"
+              />
+            </div>
+
+            <span class="spanReg"
+              >Registration is free for this week only, register now!</span
+            >
+            <button type="submit">Register</button>
+          </form>
+          <div class="introduce">
+            <div class="title">Don't have an account?</div>
+            <div class="topic">REGISTER</div>
+            <div class="des">
+              Your data is securely encrypted and stored. We prioritize your
+              privacy and ensure compliance with global data protection
+              standards
+            </div>
+            <button class="seeMore">SEE MORE</button>
+          </div>
+          <div class="detail">
+            <div class="title">Take your music pleasure to the top</div>
+            <div class="des">
+              <h3>Safety Considerations for Using Headphones</h3>
+              <h4>Awareness of Ambient Noise:</h4>
+              When using headphones with active noise-cancellation (ANC)
+              technology, your awareness of the environment may decrease. In
+              traffic, while walking, or in outdoor settings, disable ANC to
+              ensure you can hear important ambient sounds. <br />
+
+              <h4>Using Headphones While Driving:</h4>
+              Wearing headphones while driving or cycling can block critical
+              environmental sounds, increasing the risk of accidents. Avoid
+              using headphones in these situations to maintain full awareness.
+              <br />
+
+              <h4>Wired Headphones:</h4>
+              Wired headphones pose a risk of snagging during sudden movements.
+              Opt for wireless models when exercising or performing activities
+              that involve frequent motion to minimize this hazard. <br />
+
+              <h4>Headphones at Night:</h4>
+              Sleeping with headphones can cause discomfort and pressure on your
+              ears, and it may prevent you from waking up in emergencies.
+              Consider alternatives like speakers for nighttime use.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <form class="Login-form" aria-required="false">
+            <h2>Do you have an account?</h2>
+            <div class="input-container">
+              <div class="validation-box" id="email-validation">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                  />
+                </svg>
+              </div>
+              <span>EMAIL</span>
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                class="EmailBox"
+              />
+            </div>
+
+            <div class="input-container">
+              <div
+                class="validation-box"
+                id="password-validation"
+                class="PasswordBox"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"
+                  />
+                </svg>
+              </div>
+              <span>PASSWORD</span>
+              <input
+                type="password"
+                placeholder="Password"
+                required
+                class="Password"
+              />
+            </div>
+
+            <span class="spanReg"
+              >Login is free for this week only, Login now!</span
+            >
+            <button type="submit">Login</button>
+          </form>
+          <div class="introduce">
+            <div class="title">Do you have an account?</div>
+            <div class="topic">LOGIN</div>
+            <div class="des">
+              Your data is securely encrypted and stored. We prioritize your
+              privacy and ensure compliance with global data protection
+              standards
+            </div>
+            <button class="seeMore">SEE MORE</button>
+          </div>
+          <div class="detail">
+            <div class="title">Take your music pleasure to the top</div>
+            <div class="des">
+              <h3>Safety Considerations for Using Headphones</h3>
+              <h4>Awareness of Ambient Noise:</h4>
+              When using headphones with active noise-cancellation (ANC)
+              technology, your awareness of the environment may decrease. In
+              traffic, while walking, or in outdoor settings, disable ANC to
+              ensure you can hear important ambient sounds. <br />
+
+              <h4>Using Headphones While Driving:</h4>
+              Wearing headphones while driving or cycling can block critical
+              environmental sounds, increasing the risk of accidents. Avoid
+              using headphones in these situations to maintain full awareness.
+              <br />
+
+              <h4>Wired Headphones:</h4>
+              Wired headphones pose a risk of snagging during sudden movements.
+              Opt for wireless models when exercising or performing activities
+              that involve frequent motion to minimize this hazard. <br />
+
+              <h4>Headphones at Night:</h4>
+              Sleeping with headphones can cause discomfort and pressure on your
+              ears, and it may prevent you from waking up in emergencies.
+              Consider alternatives like speakers for nighttime use.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <form class="register-form" aria-required="false">
+            <h2>Create an Account</h2>
+
+            <div class="input-container">
+              <div class="validation-box" id="name-validation">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                  />
+                </svg>
+              </div>
+              <span>NAME</span>
+              <input
+                type="text"
+                placeholder="Full Name"
+                required
+                class="NameBox"
+              />
+            </div>
+
+            <div class="input-container">
+              <div class="validation-box" id="email-validation">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                  />
+                </svg>
+              </div>
+              <span>EMAIL</span>
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                class="EmailBox"
+              />
+            </div>
+
+            <div class="input-container">
+              <div
+                class="validation-box"
+                id="password-validation"
+                class="PasswordBox"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"
+                  />
+                </svg>
+              </div>
+              <span>PASSWORD</span>
+              <input
+                type="password"
+                placeholder="Password"
+                required
+                class="Password"
+              />
+            </div>
+
+            <div class="input-container">
+              <div
+                class="validation-box"
+                id="confirm-password-validation"
+                class="confirmPasswordBox"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"
+                  />
+                </svg>
+              </div>
+              <span>CONFIRM PASSWORD</span>
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                required
+                class="confirmPassword"
+              />
+            </div>
+
+            <span class="spanReg"
+              >Registration is free for this week only, register now!</span
+            >
+            <button type="submit">Register</button>
+          </form>
+          <div class="introduce">
+            <div class="title">Don't have an account?</div>
+            <div class="topic">REGISTER</div>
+            <div class="des">
+              Your data is securely encrypted and stored. We prioritize your
+              privacy and ensure compliance with global data protection
+              standards
+            </div>
+            <button class="seeMore">SEE MORE</button>
+          </div>
+          <div class="detail">
+            <div class="title">Take your music pleasure to the top</div>
+            <div class="des">
+              <h3>Safety Considerations for Using Headphones</h3>
+              <h4>Awareness of Ambient Noise:</h4>
+              When using headphones with active noise-cancellation (ANC)
+              technology, your awareness of the environment may decrease. In
+              traffic, while walking, or in outdoor settings, disable ANC to
+              ensure you can hear important ambient sounds. <br />
+
+              <h4>Using Headphones While Driving:</h4>
+              Wearing headphones while driving or cycling can block critical
+              environmental sounds, increasing the risk of accidents. Avoid
+              using headphones in these situations to maintain full awareness.
+              <br />
+
+              <h4>Wired Headphones:</h4>
+              Wired headphones pose a risk of snagging during sudden movements.
+              Opt for wireless models when exercising or performing activities
+              that involve frequent motion to minimize this hazard. <br />
+
+              <h4>Headphones at Night:</h4>
+              Sleeping with headphones can cause discomfort and pressure on your
+              ears, and it may prevent you from waking up in emergencies.
+              Consider alternatives like speakers for nighttime use.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <form class="Login-form" aria-required="false">
+            <h2>Do you have an account?</h2>
+            <div class="input-container">
+              <div class="validation-box" id="email-validation">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                  />
+                </svg>
+              </div>
+              <span>EMAIL</span>
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                class="EmailBox"
+              />
+            </div>
+
+            <div class="input-container">
+              <div
+                class="validation-box"
+                id="password-validation"
+                class="PasswordBox"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"
+                  />
+                </svg>
+              </div>
+              <span>PASSWORD</span>
+              <input
+                type="password"
+                placeholder="Password"
+                required
+                class="Password"
+              />
+            </div>
+
+            <span class="spanReg"
+              >Login is free for this week only, Login now!</span
+            >
+            <button type="submit">Login</button>
+          </form>
+          <div class="introduce">
+            <div class="title">Do you have an account?</div>
+            <div class="topic">LOGIN</div>
+            <div class="des">
+              Your data is securely encrypted and stored. We prioritize your
+              privacy and ensure compliance with global data protection
+              standards
+            </div>
+            <button class="seeMore">SEE MORE</button>
+          </div>
+          <div class="detail">
+            <div class="title">Take your music pleasure to the top</div>
+            <div class="des">
+              <h3>Safety Considerations for Using Headphones</h3>
+              <h4>Awareness of Ambient Noise:</h4>
+              When using headphones with active noise-cancellation (ANC)
+              technology, your awareness of the environment may decrease. In
+              traffic, while walking, or in outdoor settings, disable ANC to
+              ensure you can hear important ambient sounds. <br />
+
+              <h4>Using Headphones While Driving:</h4>
+              Wearing headphones while driving or cycling can block critical
+              environmental sounds, increasing the risk of accidents. Avoid
+              using headphones in these situations to maintain full awareness.
+              <br />
+
+              <h4>Wired Headphones:</h4>
+              Wired headphones pose a risk of snagging during sudden movements.
+              Opt for wireless models when exercising or performing activities
+              that involve frequent motion to minimize this hazard. <br />
+
+              <h4>Headphones at Night:</h4>
+              Sleeping with headphones can cause discomfort and pressure on your
+              ears, and it may prevent you from waking up in emergencies.
+              Consider alternatives like speakers for nighttime use.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <form class="register-form" aria-required="false">
+            <h2>Create an Account</h2>
+
+            <div class="input-container">
+              <div class="validation-box" id="name-validation">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                  />
+                </svg>
+              </div>
+              <span>NAME</span>
+              <input
+                type="text"
+                placeholder="Full Name"
+                required
+                class="NameBox"
+              />
+            </div>
+
+            <div class="input-container">
+              <div class="validation-box" id="email-validation">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                  />
+                </svg>
+              </div>
+              <span>EMAIL</span>
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                class="EmailBox"
+              />
+            </div>
+
+            <div class="input-container">
+              <div
+                class="validation-box"
+                id="password-validation"
+                class="PasswordBox"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"
+                  />
+                </svg>
+              </div>
+              <span>PASSWORD</span>
+              <input
+                type="password"
+                placeholder="Password"
+                required
+                class="Password"
+              />
+            </div>
+
+            <div class="input-container">
+              <div
+                class="validation-box"
+                id="confirm-password-validation"
+                class="confirmPasswordBox"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"
+                  />
+                </svg>
+              </div>
+              <span>CONFIRM PASSWORD</span>
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                required
+                class="confirmPassword"
+              />
+            </div>
+
+            <span class="spanReg"
+              >Registration is free for this week only, register now!</span
+            >
+            <button type="submit">Register</button>
+          </form>
+          <div class="introduce">
+            <div class="title">Don't have an account?</div>
+            <div class="topic">REGISTER</div>
+            <div class="des">
+              <!-- 20 lorem -->
+              Your data is securely encrypted and stored. We prioritize your
+              privacy and ensure compliance with global data protection
+              standards
+            </div>
+            <button class="seeMore">SEE MORE</button>
+          </div>
+          <div class="detail">
+            <div class="title">Take your music pleasure to the top</div>
+            <div class="des">
+              <h3>Safety Considerations for Using Headphones</h3>
+              <h4>Awareness of Ambient Noise:</h4>
+              When using headphones with active noise-cancellation (ANC)
+              technology, your awareness of the environment may decrease. In
+              traffic, while walking, or in outdoor settings, disable ANC to
+              ensure you can hear important ambient sounds. <br />
+
+              <h4>Using Headphones While Driving:</h4>
+              Wearing headphones while driving or cycling can block critical
+              environmental sounds, increasing the risk of accidents. Avoid
+              using headphones in these situations to maintain full awareness.
+              <br />
+
+              <h4>Wired Headphones:</h4>
+              Wired headphones pose a risk of snagging during sudden movements.
+              Opt for wireless models when exercising or performing activities
+              that involve frequent motion to minimize this hazard. <br />
+
+              <h4>Headphones at Night:</h4>
+              Sleeping with headphones can cause discomfort and pressure on your
+              ears, and it may prevent you from waking up in emergencies.
+              Consider alternatives like speakers for nighttime use.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+        <button id="back">See All</button>
+      </div>
+    </div>
+
+    <footer>
+        <div class="containerd">
+          <div class="footer-col">
+            <h2>Naveax</h2>
+            <p class="footer-para">
+              Designed to enhance every listening experience. If you have any work
+              from me or any types of quries related to my tutorial
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3 class="text-office">
+              Office
+              <div class="underline"><span></span></div>
+            </h3>
+            <p>ICDAS MTAL</p>
+            <p>İçdaş Meslek lisesi</p>
+            <p>Canakkale Biga, Turkey</p>
+  
+            <a href="mailto:mtal@gmail.com" class="emaild">mtal@gmail.com</p>
+            <a href="tel:+905445445454" class="phoned">+90 544 544 54 54</p>
+          </div>
+          <div class="footer-col">
+            <h3>
+              Menu
+              <div class="underline"><span></span></div>
+            </h3>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li>
+                <a href="../aboutUsContact/AboutUsContact.html"
+                  >About us / Contact</a
+                >
+              </li>
+              <li>
+                <a href="../loginSingup/loginSingup.html">Login / Singup</a>
+              </li>
+              <li><a href="../shopping/shopping.html">Shopping</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>
+              Newsletter
+              <div class="underline"><span></span></div>
+            </h3>
+            <form action="">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="text" placeholder="Enter Company Email" />
+              <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+            </form>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="../js/app.js"></script>
+  </body>
+</html>

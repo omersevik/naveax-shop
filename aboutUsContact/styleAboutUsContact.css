@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #2e0947;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.hide-scroll {
+  overflow: hidden !important;
+}
+
+#loader {
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #2e0947;
+
+  display: grid;
+  place-items: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite;
+}
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  animation: prixClipFix 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+header {
+  width: 1140px;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  height: 50px;
+  align-items: center;
+}
+
+header .logo {
+  font-weight: bold;
+  color: white;
+}
+
+header nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer !important;
+}
+
+div {
+  color: white;
+}
+
+header nav a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header nav a svg {
+  height: 24px;
+  width: 24px;
+  fill: white;
+  margin-top: 10px;
+}
+
+.heading {
+  text-align: center;
+  margin: 25px auto;
+}
+
+.heading h1 {
+  font-size: 50px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.heading h1::after {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 4px;
+  background-color: #a983d4;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heading p {
+  font-size: 18px;
+  color: #cccccc;
+  margin-bottom: 35px;
+}
+
+.containerf {
+  width: 90%;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-image {
+  margin-top: -10px;
+  flex: 1;
+  margin-right: 40px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.about-content {
+  margin-top: -80px;
+  flex: 1;
+}
+
+.about-content h2 {
+  margin-top: 45px;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #cccccc;
+}
+
+input {
+  margin-top: 15px;
+  margin-bottom: -15px;
+  padding: 10px;
+  border: 1px solid #3a3a3a;
+  border-radius: 20px;
+  font-weight: bolder;
+  font-size: 16px;
+  background: #560bad;
+  color: #ffffff;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #00d9ff;
+  background: #560bad;
+}
+
+input[type="submit"] {
+  background-color: #560bad;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px 25px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ae00ff;
+}
+
+input[type="submit"]:active {
+  transform: scale(1);
+}
+
+.about-content .bottoms {
+  margin-bottom: 15px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  background: #5c338b;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i {
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.container .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #fff;
+}
+.right-side .input-box {
+  height: 55px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #bb8afa86;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box {
+  min-height: 110px;
+}
+.right-side .input-box textarea {
+  margin-top: 15px;
+  padding-top: 6px;
+}
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"] {
+  color: #cccccc;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover {
+  background: #5029bc;
+}
+
+.container .content .right-side p {
+  color: #cccccc;
+}
+
+::placeholder {
+  color: #efefef;
+}
+
+.container {
+  margin-bottom: 100px;
+}
+
+.contactMesage {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
