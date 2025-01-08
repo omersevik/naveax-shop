@@ -78,7 +78,9 @@ document.addEventListener("DOMContentLoaded", function () {
       let newDiv = document.createElement("div");
       newDiv.classList.add("item");
       newDiv.innerHTML = `
-            <img src="images/img${value.image}" alt="${value.name}">
+            <img src="https://naveax-shop.vercel.app/images/img${
+              value.image
+            }" alt="${value.name}">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>
