@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }" alt="${value.name}">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
-            <button onclick="addToCard(${key})">Add To Card</button>
+            <button onclick="window.addToCard(${key})">Add To Card</button>
         `;
       list.appendChild(newDiv);
     });
@@ -120,11 +120,11 @@ document.addEventListener("DOMContentLoaded", function () {
                   value.price * value.quantity
                 ).toLocaleString()}</div>
                 <div>
-                    <button style="background-color: #560bad" class="cardButton" onclick="changeQuantity(${key}, ${
+                    <button style="background-color: #560bad" class="cardButton" onclick="window.changeQuantity(${key}, ${
           value.quantity - 1
         })">-</button>
                     <div class="count">${value.quantity}</div>
-                    <button style="background-color: #560bad" class="cardButton" onclick="changeQuantity(${key}, ${
+                    <button style="background-color: #560bad" class="cardButton" onclick="window.changeQuantity(${key}, ${
           value.quantity + 1
         })">+</button>
                 </div>
@@ -146,6 +146,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     reloadCard();
   };
+
+  window.addToCard = addToCard;
+  window.reloadCard = reloadCard;
+  window.changeQuantity = changeQuantity;
 
   initApp();
 });
