@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let newDiv = document.createElement("li");
         newDiv.innerHTML = `
-                <div class="img-container"><img src="../img/${
+                <div class="img-container"> <img src="https://naveax-shop.vercel.app/images/img${
                   value.image
                 }" alt="${value.name}"></div>
                 <div class="cardTitle">${value.name}</div>
